@@ -1,0 +1,46 @@
+{
+  "name": "connectwise-automate-sdk",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": false,
+  "main": "release/automate.js",
+  "types": "release/automate.d.ts",
+  "description": "Module for interacting with ConnectWise Automate's REST API ( LabTech )",
+  "readme": "readme.md",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "npx tsc --pretty",
+    "test": "npx tsc --pretty --noEmit",
+    "document": "typedoc . --out docs --ignoreCompilerErrors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sowderca/connectwise-automate-sdk.git"
+  },
+  "keywords": [
+    "connectwise",
+    "vc3",
+    "labtech",
+    "automate"
+  ],
+  "author": {
+    "name": "Cameron Sowder",
+    "email": "cameron@sowder.io",
+    "url": "http://sowder.io"
+  },
+  "bugs": {
+    "url": "https://github.com/sowderca/connectwise-automate-sdk/issues"
+  },
+  "homepage": "https://github.com/sowderca/connectwise-automate-sdk#readme",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/isomorphic-fetch": "0.0.34",
+    "@types/node": "^10.1.2",
+    "typedoc": "^0.11.1",
+    "typescript": "^2.8.3"
+  }
+}
