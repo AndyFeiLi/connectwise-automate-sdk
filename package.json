@@ -11,7 +11,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "npx tsc --pretty",
+    "build": "npx tsc",
     "test": "npx tsc --pretty --noEmit",
     "document": "typedoc . --out docs --ignoreCompilerErrors"
   },

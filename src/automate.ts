@@ -174,7 +174,6 @@ export class APIClient {
             if (this.token) {
                 const auth: TokenResult = await this.APITokenApi.aPITokenPost_1({ tokenText: this.token });
                 Object.getOwnPropertyNames(this).filter( (property: string): boolean => property.toLowerCase().includes('api')).forEach( (property: string): void => {
-                    console.log(property);
                     // @ts-ignore
                     Reflect.defineProperty(this[property], 'defaultHeaders', {
                         value: { 'Authorization': `Bearer ${auth.AccessToken}` }
